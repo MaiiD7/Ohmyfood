@@ -1,0 +1,9 @@
+.header {
+  &__heading {
+    font-family: $font-titles;
+    font-size: 15px;
+    padding-top: 12px;
+    @include flex-centered;
+    height: 68px;
+  }
+}

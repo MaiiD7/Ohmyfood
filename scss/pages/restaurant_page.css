@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+.footer {
+  height: 180px;
+  background-color: #3f3a3a;
+  color: white;
+  padding: 15px;
+}
+
+.footer__heading {
+  font-family: "Shrikhand";
+  font-size: 20px;
+}
+
+.footer-list__item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.footer-list__item a p {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.footer-list__item a i {
+  width: 20px;
+}
+
+.btn {
+  border: none;
+  padding: 16px;
+  border-radius: 25px;
+  width: 225px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  -webkit-box-shadow: 0px 12px 15px -9px rgba(0, 0, 0, 0.459);
+          box-shadow: 0px 12px 15px -9px rgba(0, 0, 0, 0.459);
+}
+
+.btn a {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.heart {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  font-size: 22px;
+  color: white;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.header__heading {
+  font-family: "Shrikhand";
+  font-size: 15px;
+  padding-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 68px;
+}
+/*# sourceMappingURL=restaurant_page.css.map */

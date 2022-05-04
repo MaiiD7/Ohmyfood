@@ -1,0 +1,31 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.footer {
+  height: 180px;
+  background-color: rgb(63, 58, 58);
+  color: white;
+  padding: 15px;
+  &__heading {
+    font-family: $font-titles;
+    font-size: 20px;
+  }
+}
+
+.footer-list {
+  &__item {
+    a {
+      @include flex;
+      color: white;
+      font-weight: 500;
+      margin-top: 10px;
+      p {
+        font-size: 16px;
+        margin-left: 10px;
+      }
+      i {
+        width: 20px;
+      }
+    }
+  }
+}

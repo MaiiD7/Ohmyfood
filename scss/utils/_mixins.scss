@@ -1,0 +1,21 @@
+// **** Center an element ****
+
+@mixin text-centered {
+  text-align: center;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
