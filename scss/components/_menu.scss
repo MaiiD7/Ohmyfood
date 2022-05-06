@@ -1,0 +1,68 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.menu {
+  background-color: rgb(240, 237, 237);
+  border-radius: 40px 40px 0 0;
+  padding-bottom: 10%;
+  position: relative;
+  &__heading {
+    font-family: $font-titles;
+    font-size: 28px;
+    padding: 7%;
+  }
+}
+
+.course-section {
+  padding: 0 5%;
+  &__heading {
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    padding: 5px 0;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 12%;
+      bottom: 0;
+      border-bottom: 3px rgb(172, 224, 172) solid;
+    }    
+  }
+}
+
+.course-list {
+  @include flex-centered;
+  flex-direction: column;
+  margin: 5% 0;
+  
+}
+
+.course-card {
+  background-color: white;
+  width: 100%;
+  margin: 2%;
+  padding: 3%;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 11px 11px -5px rgba(0, 0, 0, 0.137);
+  h6 {
+    font-size: 18px;
+    padding: 1% 0;
+  }
+  p {
+    font-size: 14px;
+  }
+  span {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+    font-weight: 700;
+  }
+}
+
+button {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 .footer {
   height: 200px;
   background-color: #3f3a3a;
@@ -34,7 +36,6 @@
 
 .btn {
   border: none;
-  padding: 16px;
   border-radius: 25px;
   width: 225px;
   background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
@@ -44,9 +45,13 @@
 }
 
 .btn a {
+  display: block;
   color: white;
   font-size: 16px;
   font-weight: 600;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
 }
 
 * {
@@ -67,8 +72,9 @@ a {
   color: black;
 }
 
-.heart {
+.heart-home-page {
   position: absolute;
+  cursor: pointer;
   top: 35%;
   right: 10%;
   font-size: 22px;
@@ -76,9 +82,25 @@ a {
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
+.heart {
+  position: absolute;
+  cursor: pointer;
+  top: 35px;
+  right: 10%;
+  font-size: 22px;
+  color: white;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  color: #f0eded;
+  position: absolute;
+}
+
+.header {
+  position: relative;
+}
+
 .header__heading {
   font-family: "Shrikhand";
-  font-size: 15px;
+  font-size: 30px;
   padding-top: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,5 +112,122 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 68px;
+}
+
+.header__arrow {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 25px;
+  position: absolute;
+  top: 25px;
+  left: 5%;
+}
+
+.header__img {
+  height: 280px;
+  padding-bottom: 10%;
+  margin-bottom: -10%;
+}
+
+.img-1 {
+  background: url(../../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) bottom/cover;
+}
+
+.img-2 {
+  background: url(../../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center/cover;
+}
+
+.img-3 {
+  background: url(../../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) bottom/cover;
+}
+
+.img-4 {
+  background: url(../../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) bottom/cover;
+}
+
+.menu {
+  background-color: #f0eded;
+  border-radius: 40px 40px 0 0;
+  padding-bottom: 10%;
+  position: relative;
+}
+
+.menu__heading {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  padding: 7%;
+}
+
+.course-section {
+  padding: 0 5%;
+}
+
+.course-section__heading {
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  padding: 5px 0;
+}
+
+.course-section__heading:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 12%;
+  bottom: 0;
+  border-bottom: 3px #ace0ac solid;
+}
+
+.course-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5% 0;
+}
+
+.course-card {
+  background-color: white;
+  width: 100%;
+  margin: 2%;
+  padding: 3%;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 11px 11px -5px rgba(0, 0, 0, 0.137);
+          box-shadow: 0px 11px 11px -5px rgba(0, 0, 0, 0.137);
+}
+
+.course-card h6 {
+  font-size: 18px;
+  padding: 1% 0;
+}
+
+.course-card p {
+  font-size: 14px;
+}
+
+.course-card span {
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  font-weight: 700;
+}
+
+button {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=restaurant_page.css.map */

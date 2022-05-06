@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 #restaurants {
   padding: 50px 5%;
   background-color: rgba(211, 211, 211, 0.253);
@@ -102,7 +103,6 @@
 
 .btn {
   border: none;
-  padding: 16px;
   border-radius: 25px;
   width: 225px;
   background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
@@ -112,9 +112,13 @@
 }
 
 .btn a {
+  display: block;
   color: white;
   font-size: 16px;
   font-weight: 600;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
 }
 
 * {
@@ -204,6 +208,7 @@ a {
           box-shadow: 0px 11px 11px -5px rgba(0, 0, 0, 0.137);
   position: relative;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .step__icon {
@@ -359,12 +364,25 @@ a {
   margin-bottom: 30px;
 }
 
-.heart {
+.heart-home-page {
   position: absolute;
+  cursor: pointer;
   top: 35%;
   right: 10%;
   font-size: 22px;
   color: white;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.heart {
+  position: absolute;
+  cursor: pointer;
+  top: 35px;
+  right: 10%;
+  font-size: 22px;
+  color: white;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  color: #f0eded;
+  position: absolute;
 }
 /*# sourceMappingURL=home_page.css.map */
