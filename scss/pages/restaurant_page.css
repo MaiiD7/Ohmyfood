@@ -3,15 +3,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 .footer {
-  height: 180px;
+  height: 200px;
   background-color: #3f3a3a;
   color: white;
-  padding: 15px;
+  padding: 5%;
 }
 
 .footer__heading {
   font-family: "Shrikhand";
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .footer-list__item a {
@@ -29,7 +29,7 @@
 }
 
 .footer-list__item a i {
-  width: 20px;
+  width: 18px;
 }
 
 .btn {

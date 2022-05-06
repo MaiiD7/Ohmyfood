@@ -2,13 +2,13 @@
 @import "../utils/mixins";
 
 .footer {
-  height: 180px;
+  height: 200px;
   background-color: rgb(63, 58, 58);
   color: white;
-  padding: 15px;
+  padding: 5%;
   &__heading {
     font-family: $font-titles;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -24,7 +24,7 @@
         margin-left: 10px;
       }
       i {
-        width: 20px;
+        width: 18px;
       }
     }
   }
