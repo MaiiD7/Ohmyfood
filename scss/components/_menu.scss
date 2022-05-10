@@ -35,7 +35,6 @@
   @include flex-centered;
   flex-direction: column;
   margin: 5% 0;
-  
 }
 
 .course-card {
@@ -47,6 +46,8 @@
   position: relative;
   cursor: pointer;
   box-shadow: 0px 11px 11px -5px rgba(0, 0, 0, 0.137);
+  transition: 0.3s ease-in;
+  animation: appearing 1s both;
   h6 {
     font-size: 18px;
     padding: 1% 0;
@@ -59,6 +60,12 @@
     bottom: 15%;
     right: 5%;
     font-weight: 700;
+  }
+  &:nth-child(1){
+    animation-delay:0.5s ;
+  }
+  &:nth-child(2){
+    animation-delay:0.25s ;
   }
 }
 

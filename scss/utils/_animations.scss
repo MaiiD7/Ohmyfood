@@ -1,0 +1,74 @@
+@keyframes scrolling {
+  0% {
+    max-height: 100vh;
+    overflow:hidden
+  }
+  99% {
+    max-height: 100vh;
+    overflow:hidden
+  }
+  100% {
+    max-height: none;
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  16% {
+    transform: rotate(360deg);
+  }
+  33% {
+    transform: rotate(0deg);
+  }
+  48% {
+    transform: rotate(360deg);
+  }
+  66% {
+    transform: rotate(0deg);
+  }
+  82% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+
+  }
+}
+
+@keyframes hide {
+  0% {
+    z-index: 3;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  99% {
+    z-index: 3;
+  }
+  100% {
+    z-index: -3;
+    opacity: 0;
+  }
+}
+
+@keyframes appearing {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fill-in {
+  0% {
+    color: none;
+  }
+  100% {
+    color: red;
+  }
+}

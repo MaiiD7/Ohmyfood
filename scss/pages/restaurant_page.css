@@ -42,6 +42,8 @@
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   -webkit-box-shadow: 0px 12px 15px -9px rgba(0, 0, 0, 0.459);
           box-shadow: 0px 12px 15px -9px rgba(0, 0, 0, 0.459);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .btn a {
@@ -54,6 +56,10 @@
   padding: 16px;
 }
 
+.btn:hover {
+  opacity: 0.85;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -62,8 +68,13 @@
   list-style-type: none;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Roboto";
+  position: relative;
 }
 
 a {
@@ -80,6 +91,13 @@ a {
   font-size: 22px;
   color: white;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
+
+.heart-home-page:hover {
+  color: red;
+  text-shadow: red;
 }
 
 .heart {
@@ -92,6 +110,13 @@ a {
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   color: #f0eded;
   position: absolute;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
+
+.heart:hover {
+  color: red;
+  text-shadow: red;
 }
 
 .header {
@@ -207,6 +232,10 @@ a {
   cursor: pointer;
   -webkit-box-shadow: 0px 11px 11px -5px rgba(0, 0, 0, 0.137);
           box-shadow: 0px 11px 11px -5px rgba(0, 0, 0, 0.137);
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  -webkit-animation: appearing 1s both;
+          animation: appearing 1s both;
 }
 
 .course-card h6 {
@@ -223,6 +252,16 @@ a {
   bottom: 15%;
   right: 5%;
   font-weight: 700;
+}
+
+.course-card:nth-child(1) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.course-card:nth-child(2) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 
 button {

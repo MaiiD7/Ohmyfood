@@ -8,8 +8,13 @@
   list-style-type: none;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: $font-main;
+  position: relative;
 }
 
 a {

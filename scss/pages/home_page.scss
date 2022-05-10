@@ -5,3 +5,8 @@
 @import "../components/steps-card";
 @import "../components/home_header";
 @import "../components/heart";
+@import "../components/loader";
+
+body {
+  animation: scrolling 6s;
+}

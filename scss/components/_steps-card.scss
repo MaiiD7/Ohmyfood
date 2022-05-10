@@ -20,13 +20,19 @@
   position: relative;
   font-weight: 500;
   cursor: pointer;
+  transition: 0.3s ease-in;
+
   &__icon {
     position: absolute;
     left: 10%;
     font-size: 20px;
-    color: grey;
-    
+    color: grey; 
   }
+
+  &:hover {
+    background-color: rgba(221, 160, 221, 0.39)
+  }
+
 }
 
 @each $number in $step-number {
