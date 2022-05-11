@@ -72,3 +72,33 @@
     color: red;
   }
 }
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%,-50%) rotate(0deg) ;
+  }
+  100% {
+    transform: translate(-50%,-50%) rotate(-360deg);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes tight {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 82%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
