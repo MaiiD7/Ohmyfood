@@ -1,3 +1,5 @@
+// Prevent user from scrolling
+
 @keyframes scrolling {
   0% {
     max-height: 100vh;
@@ -11,6 +13,8 @@
     max-height: none;
   }
 }
+
+// Animates the loading spinner
 
 @keyframes loader {
   0% {
@@ -37,6 +41,8 @@
   }
 }
 
+// Hides the loading page
+
 @keyframes hide {
   0% {
     z-index: 3;
@@ -54,6 +60,8 @@
   }
 }
 
+// Animates the course cards
+
 @keyframes appearing {
   0% {
     opacity: 0;
@@ -64,6 +72,8 @@
   }
 }
 
+// Fill in the heart icons
+
 @keyframes fill-in {
   0% {
     color: none;
@@ -73,23 +83,40 @@
   }
 }
 
+// Makes the checked icon rotate
+
 @keyframes rotate {
   0% {
     transform: translate(-50%,-50%) rotate(0deg) ;
   }
   100% {
-    transform: translate(-50%,-50%) rotate(-360deg);
+    transform: translate(-50%,-50%) rotate(-720deg);
   }
 }
 
-@keyframes slide {
+// Slides the after in when hovering the course card
+
+@keyframes slide-in {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
 }
+
+// Slides the after out
+
+// @keyframes slide-out {
+//   0% {
+//     transform: translateX(0%);
+//   }
+//   100% {
+//     transform: translateX(100%);
+//   }
+// }
+
+// Hides the overflowing text in course card with "..."
 
 @keyframes tight {
   0% {

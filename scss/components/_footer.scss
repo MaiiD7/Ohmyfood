@@ -1,14 +1,19 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
+// Style for all the footers
+
 .footer {
   height: 200px;
   background-color: rgb(63, 58, 58);
-  color: white;
   padding: 5%;
   &__heading {
+    color: white;
     font-family: $font-titles;
-    font-size: 18px;
+    h5 {
+      font-weight: 100;
+      font-size: 18px;
+    }
   }
 }
 

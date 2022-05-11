@@ -1,12 +1,16 @@
-// **** Center an element ****
+// Center text
 
 @mixin text-centered {
   text-align: center;
 }
 
+// Display flex
+
 @mixin flex {
   display: flex;
 }
+
+// Display flex and center content
 
 @mixin flex-centered {
   display: flex;
@@ -14,11 +18,15 @@
   align-items: center;
 }
 
+// Display flex and justify content
+
 @mixin flex-space-around {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
+// General style for heart icons
 
 @mixin heart($top, $right) {
   position: absolute;

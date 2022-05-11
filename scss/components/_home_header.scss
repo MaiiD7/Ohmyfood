@@ -1,8 +1,11 @@
 @import "../utils/variables";
 
+// Style for the home page header
+
 .header {
   &__heading {
     font-family: $font-titles;
+    font-weight: 100;
     font-size: 15px;
     padding-top: 12px;
     @include flex-centered;

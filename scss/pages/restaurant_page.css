@@ -4,72 +4,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-.footer {
-  height: 200px;
-  background-color: #3f3a3a;
-  color: white;
-  padding: 5%;
-}
-
-.footer__heading {
-  font-family: "Shrikhand";
-  font-size: 18px;
-}
-
-.footer-list__item a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: white;
-  font-weight: 500;
-  margin-top: 10px;
-}
-
-.footer-list__item a p {
-  font-size: 16px;
-  margin-left: 10px;
-}
-
-.footer-list__item a i {
-  width: 18px;
-}
-
-.btn {
-  border: none;
-  border-radius: 25px;
-  width: 225px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  -webkit-box-shadow: 0px 12px 15px -9px rgba(0, 0, 0, 0.459);
-          box-shadow: 0px 12px 15px -9px rgba(0, 0, 0, 0.459);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.btn a {
-  display: block;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  width: 100%;
-  height: 100%;
-  padding: 16px;
-}
-
-.btn:hover {
-  opacity: 0.85;
-}
-
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   list-style-type: none;
-}
-
-html {
-  overflow-x: hidden;
 }
 
 body {
@@ -253,8 +193,8 @@ a {
             transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
-    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
-            transform: translate(-50%, -50%) rotate(-360deg);
+    -webkit-transform: translate(-50%, -50%) rotate(-720deg);
+            transform: translate(-50%, -50%) rotate(-720deg);
   }
 }
 
@@ -264,30 +204,30 @@ a {
             transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
-    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
-            transform: translate(-50%, -50%) rotate(-360deg);
+    -webkit-transform: translate(-50%, -50%) rotate(-720deg);
+            transform: translate(-50%, -50%) rotate(-720deg);
   }
 }
 
-@-webkit-keyframes slide {
+@-webkit-keyframes slide-in {
   0% {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
   100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
-@keyframes slide {
+@keyframes slide-in {
   0% {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
   100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
@@ -315,40 +255,27 @@ a {
   }
 }
 
-.heart-home-page {
-  position: absolute;
-  cursor: pointer;
-  top: 35%;
-  right: 10%;
-  font-size: 22px;
-  color: white;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.heart-home-page:hover {
-  color: red;
-  text-shadow: red;
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
-.heart {
-  position: absolute;
-  cursor: pointer;
-  top: 35px;
-  right: 10%;
-  font-size: 22px;
-  color: white;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  color: #f0eded;
-  position: absolute;
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.8)), to(rgba(255, 121, 218, 0.8)));
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.8) 0%, rgba(255, 121, 218, 0.8) 100%);
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: content-box;
 }
 
-.heart:hover {
-  color: red;
-  text-shadow: red;
+::-webkit-scrollbar-thumb:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  border: 2px solid transparent;
+  background-clip: content-box;
 }
 
 .header {
@@ -357,6 +284,7 @@ a {
 
 .header__heading {
   font-family: "Shrikhand";
+  font-weight: 100;
   font-size: 30px;
   padding-top: 12px;
   display: -webkit-box;
@@ -492,19 +420,19 @@ a {
             transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
-    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
-            transform: translate(-50%, -50%) rotate(-360deg);
+    -webkit-transform: translate(-50%, -50%) rotate(-720deg);
+            transform: translate(-50%, -50%) rotate(-720deg);
   }
 }
 
-@keyframes slide {
+@keyframes slide-in {
   0% {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
   100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
@@ -529,6 +457,7 @@ a {
 
 .menu__heading {
   font-family: "Shrikhand";
+  font-weight: 100;
   font-size: 28px;
   padding: 7%;
 }
@@ -541,16 +470,16 @@ a {
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
-  padding: 5px 0;
+  padding: 8px 0;
 }
 
 .course-section__heading:before {
   content: "";
   position: absolute;
   height: 2px;
-  width: 12%;
+  width: 8%;
   bottom: 0;
-  border-bottom: 3px #ace0ac solid;
+  border-bottom: 3px rgba(99, 221, 195, 0.699) solid;
 }
 
 .course-list {
@@ -573,14 +502,12 @@ a {
 .course-card {
   background-color: white;
   width: 100%;
-  margin: 2%;
-  padding: 3%;
+  margin: 8px;
+  padding: 12px;
   border-radius: 15px;
   cursor: pointer;
   -webkit-box-shadow: 0px 11px 11px -5px rgba(0, 0, 0, 0.137);
           box-shadow: 0px 11px 11px -5px rgba(0, 0, 0, 0.137);
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
   -webkit-animation: appearing 0.8s both;
           animation: appearing 0.8s both;
 }
@@ -592,7 +519,7 @@ a {
 
 .course-card .info-container h6 {
   font-size: 18px;
-  padding: 1% 0;
+  padding: 4px 0;
 }
 
 .course-card .info-container p {
@@ -605,13 +532,6 @@ a {
   bottom: 15%;
   right: 5%;
   font-weight: 700;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.course-card:nth-child(1) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
 }
 
 .course-card:nth-child(2) {
@@ -619,13 +539,18 @@ a {
           animation-delay: 0.25s;
 }
 
+.course-card:nth-child(3) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
 .course-card:hover {
   overflow: hidden;
 }
 
 .course-card:hover .info-container, .course-card:hover p, .course-card:hover h6 {
-  -webkit-animation: tight 1s forwards;
-          animation: tight 1s forwards;
+  -webkit-animation: tight 0.8s forwards ease-out;
+          animation: tight 0.8s forwards ease-out;
 }
 
 .course-card:hover .selected {
@@ -635,26 +560,123 @@ a {
   border-radius: 0 15px 15px 0;
   height: 100%;
   width: 18%;
-  background-color: #7eeb7e;
-  -webkit-animation: slide 1s forwards;
-          animation: slide 1s forwards;
+  background-color: rgba(99, 221, 195, 0.699);
+  -webkit-animation: slide-in 0.8s ease-out;
+          animation: slide-in 0.8s ease-out;
 }
 
 .course-card:hover .selected::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: x-large;
+  font-size: 25px;
+  color: white;
   content: "\f058";
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-animation: rotate 1.1s forwards;
-          animation: rotate 1.1s forwards;
+  -webkit-animation: rotate 1 0.8s forwards;
+          animation: rotate 1 0.8s forwards;
 }
 
 button {
   margin-left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.btn {
+  border: none;
+  border-radius: 25px;
+  width: 225px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  -webkit-box-shadow: 0px 12px 15px -9px rgba(0, 0, 0, 0.459);
+          box-shadow: 0px 12px 15px -9px rgba(0, 0, 0, 0.459);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn a {
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.heart-home-page {
+  position: absolute;
+  cursor: pointer;
+  top: 35%;
+  right: 10%;
+  font-size: 22px;
+  color: white;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
+
+.heart-home-page:hover {
+  color: #9356dc;
+  text-shadow: #9356dc;
+}
+
+.heart {
+  position: absolute;
+  cursor: pointer;
+  top: 35px;
+  right: 10%;
+  font-size: 22px;
+  color: white;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  color: #f0eded;
+  position: absolute;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
+
+.heart:hover {
+  color: #9356dc;
+  text-shadow: #9356dc;
+}
+
+.footer {
+  height: 200px;
+  background-color: #3f3a3a;
+  padding: 5%;
+}
+
+.footer__heading {
+  color: white;
+  font-family: "Shrikhand";
+}
+
+.footer__heading h5 {
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.footer-list__item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.footer-list__item a p {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.footer-list__item a i {
+  width: 18px;
 }
 /*# sourceMappingURL=restaurant_page.css.map */

@@ -1,6 +1,8 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 
+// Style for the home page available restaurant cards
+
 #restaurants {
   padding: 50px 5%;
   background-color: rgba(211, 211, 211, 0.253);
@@ -55,7 +57,7 @@
     position: absolute;
     border-radius: 3px;
     color: rgb(45, 104, 45);
-    background-color: rgb(162, 253, 215);
+    background-color: rgb(104, 226, 200);
     top: 5%;
     right: 5%;
   }

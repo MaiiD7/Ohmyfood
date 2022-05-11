@@ -1,5 +1,7 @@
 @import "../utils/variables";
 
+// Style for the step cards
+
 .steps {
   padding: 45px 5%;
   &__container {
@@ -27,10 +29,15 @@
     left: 10%;
     font-size: 20px;
     color: grey; 
+    transition: 0.3s ease-in;
   }
 
   &:hover {
     background-color: rgba(221, 160, 221, 0.39)
+    }
+    
+  &:hover .step__icon {
+    color: $color-primary;
   }
 
 }

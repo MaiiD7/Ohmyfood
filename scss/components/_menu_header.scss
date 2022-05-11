@@ -1,9 +1,12 @@
 @import "../utils/variables";
 
+// Style for the restaurant page headers
+
 .header {
   position: relative;
   &__heading {
     font-family: $font-titles;
+    font-weight: 100;
     font-size: 30px;
     padding-top: 12px;
     @include flex-centered;
