@@ -129,3 +129,19 @@
     white-space: nowrap;
   }
 }
+
+// Reshape the grid when hovering on element
+
+// @keyframes reshape {
+//   0% {
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-template-rows: repeat(2, 1fr);
+//   }
+//   100% {
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-template-rows: repeat(2, 1fr);
+//     grid-template-areas: 
+//     "hover hover hover"
+//     "r1 r2 r3";
+//   }
+// }

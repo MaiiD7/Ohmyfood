@@ -21,10 +21,17 @@
   p {
     position: absolute;
     width: fit-content;
-    top: 90vh;
-    left:50vw;
+    text-justify: center;
     transform: translate(-50%,-50%);
     color: white;
+  }
+  .first-text {
+    top: 60vh;
+    left:50vw;
+  }
+  .second-text {
+    top: 90vh;
+    left:50vw;
   }
 }
 

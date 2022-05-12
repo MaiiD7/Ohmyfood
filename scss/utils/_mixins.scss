@@ -18,11 +18,28 @@
   align-items: center;
 }
 
-// Display flex and justify content
+// Display flex and space-around
 
 @mixin flex-space-around {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+// Display flex and space-between
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Display flex and wrapping
+
+@mixin flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
 

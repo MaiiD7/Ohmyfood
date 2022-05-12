@@ -18,3 +18,12 @@ a {
   display: block;
   color: black;
 }
+
+// Media queries
+
+@media screen and (min-width: 1920px) {
+  body {
+    max-width: 1920px;
+    margin: auto;
+  }
+}

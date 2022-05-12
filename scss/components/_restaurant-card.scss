@@ -1,5 +1,6 @@
 @import "../utils/mixins";
 @import "../utils/variables";
+@import "../utils/animations";
 
 // Style for the home page available restaurant cards
 
@@ -66,5 +67,59 @@
 @for $i from 1 to 5 {
   .img-#{$i} {
     background: nth($restaurant-img, $i) center/cover;
+  }
+}
+
+
+// Media queries
+// for tablets
+
+@media screen and (min-width: 760px){
+  .restaurants-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "e1 e2"
+    "e3 e4";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    a {
+      &:nth-child(1){
+        grid-area: e1;
+      }
+      &:nth-child(2){
+        grid-area: e2;
+      }
+      &:nth-child(3){
+        grid-area: e3;
+      }
+      &:nth-child(4){
+        grid-area: e4;
+      }
+    }
+  }
+}
+
+// for desktop
+
+@media screen and (min-width: 1040px) {
+  .restaurants-container {
+    margin: auto;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    max-width: 1200px;
+    a {
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .restaurants-container {
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "e1 e2 e3 e4";
+    max-width: none;
   }
 }

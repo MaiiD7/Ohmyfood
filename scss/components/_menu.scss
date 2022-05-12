@@ -110,3 +110,32 @@ button {
   margin-left: 50%;
   transform: translateX(-50%);
 }
+
+// Media queries
+// for tablets
+
+@media screen and (min-width: 760px) {
+    .course-section {
+      padding: 0 10%;
+      &__heading {
+        margin: auto;
+        width: fit-content;
+        border-bottom: 3px rgba(99, 221, 195, 0.699) solid;
+        &:before {
+          content: none;
+        }
+      }
+    }
+    .course-card {
+      width: 80%;
+    }
+}
+
+// for desktop
+
+@media screen and (min-width: 1040px){
+  .menu {
+    margin: auto;
+    max-width: 1040px;
+  }
+}

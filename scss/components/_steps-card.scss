@@ -56,3 +56,18 @@
     background-color: $color-primary;
   }
 }
+
+// Media queries 
+
+@media screen and (min-width: 1040px) {
+  .steps {
+    &__container {
+      @include flex-space-between;
+      flex-direction: row;
+      
+    } 
+  }
+  .step {
+    width: 30%;
+  }
+}

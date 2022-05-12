@@ -23,6 +23,13 @@ a {
   color: black;
 }
 
+@media screen and (min-width: 1920px) {
+  body {
+    max-width: 1920px;
+    margin: auto;
+  }
+}
+
 @-webkit-keyframes scrolling {
   0% {
     max-height: 100vh;
@@ -584,6 +591,32 @@ button {
           transform: translateX(-50%);
 }
 
+@media screen and (min-width: 760px) {
+  .course-section {
+    padding: 0 10%;
+  }
+  .course-section__heading {
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-bottom: 3px rgba(99, 221, 195, 0.699) solid;
+  }
+  .course-section__heading:before {
+    content: none;
+  }
+  .course-card {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .menu {
+    margin: auto;
+    max-width: 1040px;
+  }
+}
+
 .btn {
   border: none;
   border-radius: 25px;
@@ -646,10 +679,23 @@ button {
   text-shadow: #9356dc;
 }
 
+@media screen and (min-width: 760px) {
+  .heart {
+    position: absolute;
+    cursor: pointer;
+    top: 5%;
+    right: 10%;
+    font-size: 22px;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    color: #f0eded;
+  }
+}
+
 .footer {
   height: 200px;
   background-color: #3f3a3a;
-  padding: 5%;
+  padding: 40px 40px;
 }
 
 .footer__heading {
@@ -678,5 +724,17 @@ button {
 
 .footer-list__item a i {
   width: 18px;
+}
+
+@media screen and (min-width: 1040px) {
+  .footer {
+    height: 250px;
+  }
+  .footer__heading h5 {
+    font-size: 22px;
+  }
+  .footer .footer-list i {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=restaurant_page.css.map */
