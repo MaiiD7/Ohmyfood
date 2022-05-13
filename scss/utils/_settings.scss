@@ -8,6 +8,10 @@
   list-style-type: none;
 }
 
+body, html {
+  overflow-x: hidden; 
+}
+
 body {
   font-family: $font-main;
   position: relative;

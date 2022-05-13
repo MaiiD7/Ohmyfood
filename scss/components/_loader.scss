@@ -9,13 +9,14 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgb(63, 58, 58);
+  background-color: white;
   z-index: 3;
   animation: hide 1s;
-  animation-delay: 5s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
   h1 {
-    color: white;
+    color: black;
+    font-weight: 500;
     font-size: 30px;
   }
   p {
@@ -23,7 +24,8 @@
     width: fit-content;
     text-justify: center;
     transform: translate(-50%,-50%);
-    color: white;
+    color: black;
+    font-weight: 500;
   }
   .first-text {
     top: 60vh;
@@ -43,7 +45,7 @@
 }
 
 .loader div {
-  animation: loader 6s cubic-bezier(0.5, 0, 0.5, 1);
+  animation: loader 4s cubic-bezier(0.5, 0, 0.5, 1);
   transform-origin: 40px 40px;
   
   &:after {

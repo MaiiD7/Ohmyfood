@@ -38,3 +38,47 @@
     }
   }
 }
+
+// Media queries
+
+@media screen and (min-width: 760px) {
+  .header__img {
+    height: 340px;
+  } 
+}
+
+@media screen and (min-width: 920px) {
+  .header__img {
+    height: 400px;
+  } 
+}
+
+@media screen and (min-width: 1040px) {
+  .header__img {
+    height: 450px;
+  } 
+}
+
+@media screen and (min-width: 1200px) {
+  .header__img {
+    height: 500px;
+  } 
+}
+
+@media screen and (min-width: 1350px) {
+  .header__img {
+    height: 600px;
+  } 
+}
+
+@media screen and (min-width: 1600px) {
+  .header__img {
+    height: 700px;
+  } 
+}
+
+@media screen and (min-width: 1750px) {
+  .header__img {
+    height: 750px;
+  } 
+}
